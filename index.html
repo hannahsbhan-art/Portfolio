@@ -1,495 +1,481 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO: 페이지 제목 -->
-    <title>HAN SHINBI | AI · Digital Transformation · Future Developer</title>
+  <title>HAN SHINBI | Portfolio</title>
 
-    <!-- SEO: 페이지 설명 -->
-    <meta
-      name="description"
-      content="기술과 비즈니스를 연결하며 실제 문제를 해결하는 사람. AI, Digital Transformation, Technology 분야에서 성장 중인 한신비의 개인 브랜딩 사이트입니다."
-    />
-    <meta
-      name="keywords"
-      content="한신비, HAN SHINBI, AI, Digital Transformation, Consulting, Technology, Future Developer"
-    />
-    <meta name="author" content="한신비" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Open Graph: SNS 공유 미리보기 -->
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ko_KR" />
-    <meta property="og:title" content="HAN SH
-    INBI | AI · Digital Transformation · Future Developer" />
-    <meta
-      property="og:description"
-      content="기술과 비즈니스를 연결하며 실제 문제를 해결하는 사람. AI와 비즈니스를 연결하는 전문가를 목표로 성장하고 있습니다."
-    />
-    <meta property="og:site_name" content="HAN SHINBI" />
-    <meta property="og:image" content="./assets/images/og-image.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="HAN SHINBI | AI · Digital Transformation · Future Developer" />
-    <meta
-      name="twitter:description"
-      content="기술과 비즈니스를 연결하며 실제 문제를 해결하는 사람."
-    />
-    <meta name="twitter:image" content="./assets/images/og-image.svg" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
-    <!-- 파비콘 -->
-    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
-    <link rel="apple-touch-icon" href="./assets/icons/favicon.svg" />
+<body>
 
-    <!-- 스타일시트 -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<header class="header">
 
-  <body>
-    <!-- 스크린 리더용: 본문 바로가기 -->
-    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+  <div class="logo">
+    HAN SHINBI
+  </div>
 
-    <!-- ===== 헤더 / 내비게이션 ===== -->
-    <header class="header" id="header">
-      <div class="container header__inner">
-        <!-- 로고: 클릭 시 Hero로 이동 -->
-        <a class="header__logo" href="#hero" aria-label="홈으로 이동">HAN SHINBI</a>
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#education">EDUCATION</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#activities">ACTIVITIES</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
 
-        <!-- 데스크톱 메뉴 -->
-        <nav class="nav" aria-label="주요 메뉴">
-          <ul class="nav__list">
-            <li><a class="nav__link" href="#about">About</a></li>
-            <li><a class="nav__link" href="#journey">Journey</a></li>
-            <li><a class="nav__link" href="#experience">Experience</a></li>
-            <li><a class="nav__link" href="#skills">Skills</a></li>
-            <li><a class="nav__link" href="#projects">Projects</a></li>
-            <li><a class="nav__link" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+</header>
 
-        <!-- 헤더 우측: 테마 토글 + 모바일 메뉴 버튼 -->
-        <div class="header__actions">
-          <button
-            class="theme-toggle"
-            id="theme-toggle"
-            type="button"
-            aria-label="다크 모드로 전환"
-            aria-pressed="false"
-          >
-            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
-            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
-          </button>
+<main>
 
-          <button
-            class="menu-toggle"
-            id="menu-toggle"
-            type="button"
-            aria-label="메뉴 열기"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <span class="menu-toggle__bar"></span>
-            <span class="menu-toggle__bar"></span>
-            <span class="menu-toggle__bar"></span>
-          </button>
-        </div>
+  <!-- HERO -->
+
+  <section class="hero" id="hero">
+
+    <div class="hero-left">
+
+      <div class="vertical-text">
+        文 化 法 律
       </div>
 
-      <!-- 모바일 드롭다운 메뉴 -->
-      <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" hidden>
-        <ul class="mobile-menu__list">
-          <li><a class="mobile-menu__link" href="#about">About</a></li>
-          <li><a class="mobile-menu__link" href="#journey">Journey</a></li>
-          <li><a class="mobile-menu__link" href="#experience">Experience</a></li>
-          <li><a class="mobile-menu__link" href="#skills">Skills</a></li>
-          <li><a class="mobile-menu__link" href="#projects">Projects</a></li>
-          <li><a class="mobile-menu__link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+      <img
+        src="./assets/images/profile-main1.jpg"
+        alt="HAN SHINBI"
+        class="hero-image"
+      >
 
-    <!-- ===== 메인 콘텐츠 ===== -->
-    <main id="main-content">
-      <!-- 1. Hero 섹션 -->
-      <section class="hero section" id="hero" aria-labelledby="hero-title">
-        <div class="hero__glow" aria-hidden="true"></div>
-        <div class="container hero__inner">
-          <p class="hero__label fade-in">Personal Brand</p>
-          <h1 class="hero__title" id="hero-title">HAN SHINBI</h1>
-          <p class="hero__subtitle fade-in fade-in--delay-1">
-            AI • Digital Transformation • Future Developer
-          </p>
-          <p class="hero__typing" id="typing-text" aria-live="polite">
-            <span class="hero__typing-cursor" aria-hidden="true">|</span>
-          </p>
-          <div class="hero__actions fade-in fade-in--delay-3">
-            <a class="btn btn--primary" href="#about">About</a>
-            <a class="btn btn--secondary" href="#contact">Contact</a>
-          </div>
-          <a class="hero__scroll" href="#about" aria-label="About 섹션으로 스크롤">
-            <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
-          </a>
-        </div>
-      </section>
+      <div class="hero-social">
+        <a href="#">INSTAGRAM</a>
+        <a href="#">LINKEDIN</a>
+      </div>
 
-      <!-- 2. About 섹션 -->
-      <section class="section" id="about" aria-labelledby="about-title">
-        <div class="container">
-          <header class="section-header reveal">
-            <p class="section-header__label">About</p>
-            <h2 class="section-header__title" id="about-title">저는 어떤 사람인가</h2>
-          </header>
+    </div>
 
-          <div class="about-grid">
-            <div class="about-text reveal">
-              <p>중국어문학과 공법학을 전공하며 언어와 제도에 대한 이해를 쌓았고,</p>
-              <p>딜로이트와 공공기관 AI 프로젝트 경험을 통해</p>
-              <p>기술이 실제 사회와 조직에 적용되는 과정을 경험했습니다.</p>
-              <p>현재는 개발 역량을 강화하며</p>
-              <p>AI와 비즈니스를 연결하는 전문가를 목표로 성장하고 있습니다.</p>
-            </div>
+    <div class="hero-right">
 
-            <div class="about-cards">
-              <article class="info-card reveal">
-                <h3 class="info-card__title">Education</h3>
-                <ul class="info-card__list">
-                  <li>
-                    <strong>국민대학교</strong>
-                    <span>중국어문학 전공</span>
-                  </li>
-                  <li>
-                    <strong>국민대학교</strong>
-                    <span>공법학 부전공</span>
-                  </li>
-                </ul>
-              </article>
+      <div class="hero-content">
 
-              <article class="info-card reveal reveal--delay-1">
-                <h3 class="info-card__title">Positioning</h3>
-                <ul class="info-card__list info-card__list--bullet">
-                  <li>AI · Digital Transformation · Technology</li>
-                  <li>기술과 비즈니스를 연결하는 문제 해결자</li>
-                  <li>미래의 AI Product Builder / Developer</li>
-                </ul>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
+        <span class="hero-kicker">
+          Chinese Literature<br>
+          Public Law
+        </span>
 
-      <!-- 3. Journey 섹션 -->
-      <section class="section section--muted" id="journey" aria-labelledby="journey-title">
-        <div class="container container--narrow">
-          <header class="section-header section-header--center reveal">
-            <p class="section-header__label">Journey</p>
-            <h2 class="section-header__title" id="journey-title">성장의 여정</h2>
-            <p class="section-header__desc">
-              Humanities에서 Future AI Product Builder까지, 단계별로 쌓아온 경험과 방향성입니다.
-            </p>
-          </header>
+        <h1 class="hero-title">
+          HAN<br>
+          SHINBI
+        </h1>
 
-          <ol class="timeline">
-            <li class="timeline__item reveal">
-              <div class="timeline__node" aria-hidden="true"></div>
-              <div class="timeline__content">
-                <p class="timeline__subtitle">언어와 제도</p>
-                <h3 class="timeline__title">Humanities</h3>
-                <p class="timeline__desc">
-                  국민대학교 중국어문학 전공, 공법학 부전공. 언어와 제도에 대한 깊은 이해를
-                  쌓았습니다.
-                </p>
-              </div>
-            </li>
+        <div class="hero-line"></div>
 
-            <li class="timeline__item reveal">
-              <div class="timeline__node" aria-hidden="true"></div>
-              <div class="timeline__content">
-                <p class="timeline__subtitle">전략과 분석</p>
-                <h3 class="timeline__title">Consulting</h3>
-                <p class="timeline__desc">
-                  Deloitte 인턴 경험을 통해 프로젝트 리서치, 데이터 분석, 전략 문서 작성 등
-                  컨설팅 역량을 키웠습니다.
-                </p>
-              </div>
-            </li>
-
-            <li class="timeline__item reveal">
-              <div class="timeline__node" aria-hidden="true"></div>
-              <div class="timeline__content">
-                <p class="timeline__subtitle">기술의 사회적 적용</p>
-                <h3 class="timeline__title">AI Project Experience</h3>
-                <p class="timeline__desc">
-                  공공기관 AI 서비스 구축 컨설팅 인턴으로 요구사항 분석, 서비스 기획, AI 활용
-                  방안 연구를 경험했습니다.
-                </p>
-              </div>
-            </li>
-
-            <li class="timeline__item reveal">
-              <div class="timeline__node" aria-hidden="true"></div>
-              <div class="timeline__content">
-                <p class="timeline__subtitle">기술 역량 강화</p>
-                <h3 class="timeline__title">Development</h3>
-                <p class="timeline__desc">
-                  Python, JavaScript, Git, SQL 등을 학습하며 개발 역량을 적극적으로 강화하고
-                  있습니다.
-                </p>
-              </div>
-            </li>
-
-            <li class="timeline__item reveal">
-              <div class="timeline__node" aria-hidden="true"></div>
-              <div class="timeline__content">
-                <p class="timeline__subtitle">미래를 향해</p>
-                <h3 class="timeline__title">Future AI Product Builder</h3>
-                <p class="timeline__desc">
-                  AI와 비즈니스를 연결하는 AI Product Builder / Developer로 성장하는 것을
-                  목표로 합니다.
-                </p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- 4. Experience 섹션 -->
-      <section class="section" id="experience" aria-labelledby="experience-title">
-        <div class="container">
-          <header class="section-header reveal">
-            <p class="section-header__label">Experience</p>
-            <h2 class="section-header__title" id="experience-title">경험</h2>
-            <p class="section-header__desc">
-              실제 현장에서 쌓은 컨설팅 및 AI 프로젝트 경험입니다.
-            </p>
-          </header>
-
-          <div class="card-grid card-grid--2">
-            <article class="card reveal">
-              <div class="card__badge">Internship</div>
-              <h3 class="card__title">Deloitte Intern</h3>
-              <p class="card__role">Deloitte</p>
-              <p class="card__desc">
-                글로벌 컨설팅 환경에서 디지털 전환 프로젝트를 지원하며 비즈니스와 기술의
-                연결점을 경험했습니다.
-              </p>
-              <ul class="card__list">
-                <li>프로젝트 리서치</li>
-                <li>데이터 분석 지원</li>
-                <li>전략 문서 작성</li>
-                <li>디지털 전환 프로젝트 지원</li>
-              </ul>
-            </article>
-
-            <article class="card reveal reveal--delay-1">
-              <div class="card__badge">Internship</div>
-              <h3 class="card__title">Public AI Consulting Intern</h3>
-              <p class="card__role">Public AI Consulting</p>
-              <p class="card__desc">
-                국내 공공기관 AI 서비스 구축 프로젝트에 참여하며 기술이 실제 사회와 조직에
-                적용되는 과정을 경험했습니다.
-              </p>
-              <ul class="card__list">
-                <li>공공기관 AI 서비스 구축 지원</li>
-                <li>요구사항 분석</li>
-                <li>서비스 기획 참여</li>
-                <li>AI 활용 방안 연구</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. Skills 섹션 -->
-      <section class="section section--muted" id="skills" aria-labelledby="skills-title">
-        <div class="container">
-          <header class="section-header section-header--center reveal">
-            <p class="section-header__label">Skills</p>
-            <h2 class="section-header__title" id="skills-title">역량</h2>
-            <p class="section-header__desc">
-              도메인 지식, 기술 스택, 언어 역량을 카테고리별로 정리했습니다.
-            </p>
-          </header>
-
-          <div class="card-grid card-grid--3">
-            <article class="skill-card reveal">
-              <h3 class="skill-card__title">Domain</h3>
-              <div class="skill-card__tags">
-                <span class="tag">AI Service Planning</span>
-                <span class="tag">Digital Transformation</span>
-                <span class="tag">Business Analysis</span>
-                <span class="tag">Consulting</span>
-              </div>
-            </article>
-
-            <article class="skill-card reveal reveal--delay-1">
-              <h3 class="skill-card__title">Technical</h3>
-              <div class="skill-card__tags">
-                <span class="tag">Python</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Git</span>
-                <span class="tag">SQL</span>
-              </div>
-            </article>
-
-            <article class="skill-card reveal reveal--delay-2">
-              <h3 class="skill-card__title">Languages</h3>
-              <div class="skill-card__tags">
-                <span class="tag">Korean</span>
-                <span class="tag">Chinese</span>
-                <span class="tag">English</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 6. Projects 섹션 -->
-      <section class="section" id="projects" aria-labelledby="projects-title">
-        <div class="container">
-          <header class="section-header reveal">
-            <p class="section-header__label">Projects</p>
-            <h2 class="section-header__title" id="projects-title">프로젝트</h2>
-            <p class="section-header__desc">
-              학습과 경험을 바탕으로 진행 중이거나 완료한 프로젝트입니다.
-            </p>
-          </header>
-
-          <div class="card-grid card-grid--3">
-            <article class="card card--project reveal">
-              <div class="card__status card__status--progress">진행 중</div>
-              <h3 class="card__title">Portfolio Website</h3>
-              <p class="card__desc">
-                HTML, CSS, JavaScript로 구축한 개인 브랜딩 웹사이트. 스토리텔링 중심의
-                프리미엄 디자인을 적용했습니다.
-              </p>
-              <div class="card__tags">
-                <span class="tag tag--accent">HTML</span>
-                <span class="tag tag--accent">CSS</span>
-                <span class="tag tag--accent">JavaScript</span>
-              </div>
-            </article>
-
-            <article class="card card--project reveal reveal--delay-1">
-              <div class="card__status card__status--done">완료</div>
-              <h3 class="card__title">AI Service Research</h3>
-              <p class="card__desc">
-                공공기관 AI 서비스 구축 프로젝트에서 수행한 AI 활용 방안 연구 및 서비스 기획
-                관련 학습·정리 프로젝트입니다.
-              </p>
-              <div class="card__tags">
-                <span class="tag tag--accent">AI</span>
-                <span class="tag tag--accent">Research</span>
-                <span class="tag tag--accent">Planning</span>
-              </div>
-            </article>
-
-            <article class="card card--project reveal reveal--delay-2">
-              <div class="card__status card__status--progress">진행 중</div>
-              <h3 class="card__title">Development Learning Projects</h3>
-              <p class="card__desc">
-                Python, JavaScript 등을 활용한 개발 학습 프로젝트 모음. 꾸준한 실습을 통해
-                기술 역량을 쌓고 있습니다.
-              </p>
-              <div class="card__tags">
-                <span class="tag tag--accent">Python</span>
-                <span class="tag tag--accent">JavaScript</span>
-                <span class="tag tag--accent">Learning</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 7. Contact 섹션 -->
-      <section class="section section--muted" id="contact" aria-labelledby="contact-title">
-        <div class="container">
-          <header class="section-header section-header--center reveal">
-            <p class="section-header__label">Contact</p>
-            <h2 class="section-header__title" id="contact-title">연락하기</h2>
-            <p class="section-header__desc">
-              협업, 네트워킹, 또는 궁금한 점이 있으시면 편하게 연락해주세요.
-            </p>
-          </header>
-
-          <div class="contact-grid">
-            <p class="contact-intro reveal">
-              AI, Digital Transformation, Technology 분야에 관심이 있거나 함께 성장할 동료를
-              찾고 계시다면 아래 채널로 연결해주세요.
-            </p>
-
-            <div class="contact-links">
-              <!-- 연락처: 실제 주소로 교체하세요 -->
-              <a
-                class="contact-link reveal"
-                href="mailto:hannahsbhan@gmail.com"
-                aria-label="이메일 보내기"
-              >
-                <span class="contact-link__icon" aria-hidden="true">✉</span>
-                <span class="contact-link__text">
-                  <strong>Email</strong>
-                  <span>hannahsbhan@gmail.com</span>
-                </span>
-              </a>
-              <a
-                class="contact-link reveal"
-                href="https://instagram.com/hannahsbhan"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="인스타그램 방문"
-              >
-                <span class="contact-link__icon" aria-hidden="true">📷</span>
-                <span class="contact-link__text">
-                  <strong>Instagram</strong>
-                  <span>@hannahsbhan</span>
-                </span>
-              </a>
-              <a
-                class="contact-link reveal reveal--delay-1"
-                href="https://github.com/your-username"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub 프로필 열기"
-              >
-                <span class="contact-link__icon" aria-hidden="true">{ }</span>
-                <span class="contact-link__text">
-                  <strong>GitHub</strong>
-                  <span>프로필 보기</span>
-                </span>
-              </a>
-
-              <a
-                class="contact-link reveal reveal--delay-2"
-                href="https://linkedin.com/in/your-profile"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn 프로필 열기"
-              >
-                <span class="contact-link__icon" aria-hidden="true">in</span>
-                <span class="contact-link__text">
-                  <strong>LinkedIn</strong>
-                  <span>프로필 보기</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ===== 푸터 ===== -->
-    <footer class="footer">
-      <div class="container footer__inner">
-        <p class="footer__copy">
-          &copy; <span id="current-year"></span> HAN SHINBI. All rights reserved.
+        <p class="hero-desc">
+          언어를 통해 문화를 이해하고,<br>
+          법을 통해 사회를 해석합니다.
         </p>
-        <p class="footer__note">Built with HTML · CSS · JavaScript</p>
-      </div>
-    </footer>
 
-    <!-- JavaScript -->
-    <script src="./js/main.js"></script>
-  </body>
+        <p class="hero-desc-en">
+          I understand culture through language,<br>
+          and interpret society through law.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="section-number">
+      01
+    </div>
+
+    <div class="about-content">
+
+      <h2>
+        ABOUT ME
+      </h2>
+
+      <p>
+        중국어문학을 전공하고
+        공법학을 부전공하며
+        언어와 제도에 대한 이해를 쌓아왔습니다.
+      </p>
+
+      <p>
+        AI 프로젝트와 컨설팅 경험을 통해
+        기술이 사회와 조직에 적용되는 과정을
+        직접 경험했습니다.
+      </p>
+
+      <p>
+        현재는 AI와 비즈니스를 연결하는
+        Product Builder로 성장하고 있습니다.
+      </p>
+
+      <div class="signature">
+        HAN SHINBI
+      </div>
+
+    </div>
+
+    <div class="about-image">
+
+      <img
+        src="./assets/images/profile-side.jpg"
+        alt="HAN SHINBI"
+      >
+
+    </div>
+
+  </section>
+
+  <!-- EDUCATION + LANGUAGE -->
+
+  <section class="education-language" id="education">
+
+    <div class="education">
+
+      <h2>
+        EDUCATION
+      </h2>
+
+      <div class="edu-item">
+        <span>2021</span>
+        <p>국민대학교 중국어문학과 입학</p>
+      </div>
+
+      <div class="edu-item">
+        <span>2022</span>
+        <p>공법학 부전공 시작</p>
+      </div>
+
+      <div class="edu-item">
+        <span>2023</span>
+        <p>AI 프로젝트 참여</p>
+      </div>
+
+      <div class="edu-item">
+        <span>2024</span>
+        <p>Digital Transformation 프로젝트</p>
+      </div>
+
+    </div>
+
+    <div class="language">
+
+      <h2>
+        LANGUAGE
+      </h2>
+
+      <div class="skill">
+
+        <span>KOREAN</span>
+
+        <div class="bar">
+          <div class="fill fill100"></div>
+        </div>
+
+      </div>
+
+      <div class="skill">
+
+        <span>CHINESE</span>
+
+        <div class="bar">
+          <div class="fill fill90"></div>
+        </div>
+
+      </div>
+
+      <div class="skill">
+
+        <span>ENGLISH</span>
+
+        <div class="bar">
+          <div class="fill fill70"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section class="projects" id="projects">
+
+    <div class="section-number">
+      03
+    </div>
+
+    <h2>
+      PROJECTS
+    </h2>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+
+        <img
+          src="./assets/images/project1.jpg"
+          alt=""
+        >
+
+        <h3>
+          중국 현대문학 연구
+        </h3>
+
+        <span>
+          2024
+        </span>
+
+        <p>
+          현대 중국문학 비교 분석 프로젝트
+        </p>
+
+      </article>
+
+      <article class="project-card">
+
+        <img
+          src="./assets/images/project2.jpg"
+          alt=""
+        >
+
+        <h3>
+          공공정책 사례 연구
+        </h3>
+
+        <span>
+          2024
+        </span>
+
+        <p>
+          공법 관점 정책 분석 프로젝트
+        </p>
+
+      </article>
+
+      <article class="project-card">
+
+        <img
+          src="./assets/images/project3.jpg"
+          alt=""
+        >
+
+        <h3>
+          AI Service Research
+        </h3>
+
+        <span>
+          2025
+        </span>
+
+        <p>
+          공공 AI 서비스 구축 연구
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+    <!-- ACTIVITIES -->
+
+  <section class="activities" id="activities">
+
+    <div class="section-number">
+      04
+    </div>
+
+    <div class="activities-header">
+
+      <h2>
+        ACTIVITIES
+      </h2>
+
+      <p>
+        Academic · Consulting · AI
+      </p>
+
+    </div>
+
+    <div class="activity-list">
+
+      <article class="activity-item">
+
+        <span class="activity-year">
+          2024
+        </span>
+
+        <div class="activity-content">
+
+          <h3>
+            Deloitte Internship
+          </h3>
+
+          <p>
+            디지털 전환 프로젝트 지원,
+            리서치 및 전략 문서 작성
+          </p>
+
+        </div>
+
+      </article>
+
+      <article class="activity-item">
+
+        <span class="activity-year">
+          2024
+        </span>
+
+        <div class="activity-content">
+
+          <h3>
+            AI Consulting Project
+          </h3>
+
+          <p>
+            공공기관 AI 서비스 구축
+            컨설팅 프로젝트 참여
+          </p>
+
+        </div>
+
+      </article>
+
+      <article class="activity-item">
+
+        <span class="activity-year">
+          2023
+        </span>
+
+        <div class="activity-content">
+
+          <h3>
+            Chinese Culture Research
+          </h3>
+
+          <p>
+            중국 문화와 현대 사회 연구
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- QUOTE SECTION -->
+
+  <section class="quote-section">
+
+    <div class="quote-wrapper">
+
+      <p class="quote-label">
+        PERSONAL PHILOSOPHY
+      </p>
+
+      <blockquote>
+
+        “언어를 이해하는 것은<br>
+        문화를 이해하는 일이다.”
+
+      </blockquote>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <div class="contact-left">
+
+      <span class="section-number">
+        05
+      </span>
+
+      <h2>
+        CONTACT
+      </h2>
+
+      <p>
+        함께 성장할 기회를 기다리고 있습니다.
+      </p>
+
+      <div class="contact-list">
+
+        <a href="mailto:hannahsbhan@gmail.com">
+          EMAIL
+        </a>
+
+        <a href="#">
+          INSTAGRAM
+        </a>
+
+        <a href="#">
+          LINKEDIN
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="contact-right">
+
+      <img
+        src="./assets/images/profile-contact.jpg"
+        alt="HAN SHINBI"
+      >
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <div>
+
+      <h3>
+        HAN SHINBI
+      </h3>
+
+      <p>
+        Chinese Literature · Public Law
+      </p>
+
+    </div>
+
+    <div>
+
+      <p>
+        © 2026 HAN SHINBI
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="./js/main.js"></script>
+
+</body>
 </html>
