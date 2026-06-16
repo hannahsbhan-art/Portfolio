@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAN SHINBI | Portfolio</title>
+
+  <!-- [초보자용 주석] 폰트는 아래 링크에서 교체 가능합니다 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- [초보자용 주석] 상단 고정 헤더 -->
+  <header class="header">
+    <div class="logo">HAN SHINBI</div>
+    <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav">
+      <a href="#about">ABOUT</a>
+      <a href="#education">EDUCATION</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#essay">ESSAY</a>
+      <a href="#activities">ACTIVITIES</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- [초보자용 주석] 메인 비주얼: 첫 레퍼런스 사진 느낌 -->
+    <section class="hero" id="hero">
+      <div class="hero-left">
+        <div class="vertical-text">文 化 法 律</div>
+        <img src="./assets/images/profile-main1.jpg" alt="HAN SHINBI 메인 사진" class="hero-image">
+        <div class="hero-social">
+          <a href="#">INSTAGRAM</a>
+          <a href="#">LINKEDIN</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-content">
+          <span class="hero-kicker">Chinese Literature<br>Public Law · Human Rights</span>
+          <h1 class="hero-title">HAN<br>SHINBI</h1>
+          <div class="hero-line"></div>
+          <p class="hero-desc">언어로 문화를 읽고,<br>법과 인권의 시선으로 사회를 해석합니다.</p>
+          <p class="hero-desc-en">I study culture through language, and build impact through policy, rights, and people-centered work.</p>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>SCROLL</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [초보자용 주석] ABOUT 영역 -->
+    <section class="about" id="about">
+      <div class="about-header">
+        <span class="section-number">01</span>
+        <h2>ABOUT ME</h2>
+      </div>
+
+      <div class="about-main">
+        <div class="about-content">
+          <!-- [초보자용 주석] 아래 문단은 자서전 기반 요약 자기소개 -->
+          <p>저는 북한 양강도 혜산에서 태어나 자유와 인권의 의미를 삶으로 배워왔습니다. 어린 시절의 경험은 저에게 사람의 존엄과 권리를 가장 먼저 생각하는 태도를 남겼습니다.</p>
+          <p>현재는 국민대학교 중국어문학 전공·공법학 부전공 기반으로, 언어·정책·인권을 함께 이해하는 실무형 인재로 성장하고 있습니다. 현장에서 문제를 듣고, 데이터와 기록으로 구조화해 해결안을 만드는 과정을 좋아합니다.</p>
+          <p>인턴십, 교환학생(상해), NGO·인권 활동을 통해 다양한 배경의 사람들과 협업해왔고, 앞으로도 사회적 가치를 만드는 기획자/PM으로 기여하고 싶습니다.</p>
+
+          <!-- [초보자용 주석] 자기소개서 상세 페이지 이동 버튼 -->
+          <a class="detail-link" href="./details.html?type=essay">자기소개서 상세보기</a>
+          <div class="signature">Han Shinbi</div>
+        </div>
+
+        <div class="about-image">
+          <img src="./assets/images/profile-side.jpg" alt="HAN SHINBI 프로필">
+        </div>
+      </div>
+
+      <div class="about-bottom">
+        <div class="about-edu-brief">
+          <h3>EDUCATION</h3>
+          <div class="edu-brief-item">
+            <span>2021 — Present</span>
+            <p>국민대학교 중국어문학과</p>
+          </div>
+          <div class="edu-brief-item">
+            <span>2022 — Present</span>
+            <p>국민대학교 공법학 부전공</p>
+          </div>
+          <div class="edu-brief-item">
+            <span>2024</span>
+            <p>상해 교환학생 프로그램 수료</p>
+          </div>
+        </div>
+
+        <div class="language">
+          <h3>LANGUAGE</h3>
+          <div class="skill">
+            <div class="skill-header"><span>KOREAN</span><span class="skill-level">Native</span></div>
+            <div class="bar"><div class="fill fill100"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-header"><span>CHINESE</span><span class="skill-level">Advanced</span></div>
+            <div class="bar"><div class="fill fill90"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-header"><span>ENGLISH</span><span class="skill-level">Intermediate</span></div>
+            <div class="bar"><div class="fill fill70"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [초보자용 주석] EDUCATION 영역 -->
+    <section class="education-full" id="education">
+      <div class="education-split">
+        <div class="education-panel">
+          <span class="section-number light">02</span>
+          <h2>EDUCATION</h2>
+          <div class="edu-timeline">
+            <div class="edu-item"><span>2021</span><p>국민대학교 중국어문학과 입학</p></div>
+            <div class="edu-item"><span>2022</span><p>공법학 부전공 시작</p></div>
+            <div class="edu-item"><span>2024</span><p>상해 교환학생 프로그램 참여</p></div>
+            <div class="edu-item"><span>2025</span><p>인권·국제협력 주제 연구 및 프로젝트 진행</p></div>
+          </div>
+          <a href="#projects" class="view-more">VIEW MORE
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" aria-hidden="true">
+              <path d="M0 6H18M18 6L13 1M18 6L13 11" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </a>
+        </div>
+        <div class="education-visual">
+          <div class="vertical-hanja">語 言 文 律 社 會</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- [초보자용 주석] PROJECTS/INTERNSHIP 카드 -->
+    <section class="projects" id="projects">
+      <span class="section-number">03</span>
+      <h2>PROJECTS</h2>
+      <div class="project-grid">
+        <!-- [초보자용 주석] data-project 값만 바꾸면 모달 내용 연결 가능 -->
+        <article class="project-card">
+          <div class="project-image-wrap"><img src="./assets/images/project1.jpg" alt="인턴십 프로젝트"></div>
+          <h3>전략/기획 인턴십</h3>
+          <span>2024</span>
+          <p>조사·문서화·실행 지원을 통해 조직의 의사결정 과정을 경험했습니다.</p>
+          <div class="card-actions">
+            <button class="open-modal-btn" data-project="intern">빠른 상세</button>
+            <a class="detail-link" href="./details.html?type=intern">페이지 상세</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-wrap"><img src="./assets/images/project2.jpg" alt="상해 교환학생"></div>
+          <h3>상해 교환학생</h3>
+          <span>2024</span>
+          <p>다문화 환경에서 언어·문화·정책 관점을 확장하고 국제 협업 경험을 쌓았습니다.</p>
+          <div class="card-actions">
+            <button class="open-modal-btn" data-project="shanghai">빠른 상세</button>
+            <a class="detail-link" href="./details.html?type=shanghai">페이지 상세</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-wrap"><img src="./assets/images/project3.jpg" alt="NGO 인권활동"></div>
+          <h3>NGO · 인권 활동</h3>
+          <span>2023 — Present</span>
+          <p>현장 중심 활동과 캠페인 보조를 통해 공공성과 인권 감수성을 실천했습니다.</p>
+          <div class="card-actions">
+            <button class="open-modal-btn" data-project="ngo">빠른 상세</button>
+            <a class="detail-link" href="./details.html?type=ngo">페이지 상세</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- [초보자용 주석] 자소서 미리보기 섹션 -->
+    <section class="essay-preview" id="essay">
+      <span class="section-number">04</span>
+      <h2>PERSONAL ESSAY</h2>
+      <p class="essay-summary">
+        “독재정권에서 태어나 자유와 인권의 부재를 체감했던 경험은, 지금의 저를 움직이는 가장 큰 원동력입니다.”
+        자서전 내용 일부를 바탕으로 핵심 서사를 정리했습니다.
+      </p>
+      <div class="card-actions">
+        <button class="open-modal-btn" data-project="essay">빠른 상세</button>
+        <a class="detail-link" href="./details.html?type=essay">페이지 상세</a>
+      </div>
+    </section>
+
+    <!-- [초보자용 주석] 활동 섹션 -->
+    <section class="activities" id="activities">
+      <div class="activities-overlay"></div>
+      <div class="activities-content">
+        <span class="section-number">05</span>
+        <h2>ACTIVITIES</h2>
+        <div class="activity-grid">
+          <article class="activity-icon-item"><div class="activity-icon"><svg viewBox="0 0 48 48" fill="none"><rect x="8" y="12" width="32" height="28" stroke="currentColor" stroke-width="1"/><path d="M16 12V8H32V12" stroke="currentColor" stroke-width="1"/></svg></div><h3>인턴십</h3><span>2024</span></article>
+          <article class="activity-icon-item"><div class="activity-icon"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1"/><path d="M24 16V24L30 28" stroke="currentColor" stroke-width="1"/></svg></div><h3>상해 교환학생</h3><span>2024</span></article>
+          <article class="activity-icon-item"><div class="activity-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M10 38L24 10L38 38H10Z" stroke="currentColor" stroke-width="1"/></svg></div><h3>NGO 활동</h3><span>2023~</span></article>
+          <article class="activity-icon-item"><div class="activity-icon"><svg viewBox="0 0 48 48" fill="none"><path d="M12 36L24 8L36 36" stroke="currentColor" stroke-width="1"/><circle cx="24" cy="28" r="4" stroke="currentColor" stroke-width="1"/></svg></div><h3>인권 캠페인</h3><span>2023~</span></article>
+          <!-- [초보자용 주석] 아래처럼 활동 카드 복사해서 추가 가능 -->
+          <!--
+          <article class="activity-icon-item">
+            <div class="activity-icon">아이콘</div>
+            <h3>추가 활동명</h3>
+            <span>연도</span>
+          </article>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- [초보자용 주석] 연락처 -->
+    <section class="contact" id="contact">
+      <div class="contact-left">
+        <span class="section-number">06</span>
+        <h2>CONTACT</h2>
+        <p>인권, 국제협력, 기획 기반 프로젝트에서 함께 성장할 기회를 기다리고 있습니다.</p>
+        <div class="contact-list">
+          <a href="mailto:hannahsbhan@gmail.com"><span class="contact-label">E-MAIL</span><span class="contact-value">hannahsbhan@gmail.com</span></a>
+          <a href="#"><span class="contact-label">INSTAGRAM</span><span class="contact-value">@han_shinbi</span></a>
+          <a href="tel:+821012345678"><span class="contact-label">PHONE</span><span class="contact-value">010-1234-5678</span></a>
+        </div>
+      </div>
+      <div class="contact-right"><img src="./assets/images/profile-contact.jpg" alt="HAN SHINBI 연락처 사진"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 HAN SHINBI. All rights reserved.</p>
+    <button class="back-to-top" aria-label="맨 위로">
+      TOP
+      <svg width="12" height="16" viewBox="0 0 12 16" fill="none" aria-hidden="true">
+        <path d="M6 15V1M6 1L1 6M6 1L11 6" stroke="currentColor" stroke-width="1"/>
+      </svg>
+    </button>
+  </footer>
+
+  <!-- [초보자용 주석] 프로젝트/자소서 빠른 상세 모달 -->
+  <div class="modal-overlay" id="detailModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="모달 닫기">×</button>
+      <h3 id="modalTitle">상세 제목</h3>
+      <p id="modalMeta">연도</p>
+      <p id="modalBody">상세 내용</p>
+      <a id="modalLink" class="detail-link" href="./details.html" target="_self">자세한 페이지 보기</a>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
