@@ -1,69 +1,494 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <!-- SEO: 페이지 제목 -->
+    <title>HAN SINBI | AI · Digital Transformation · Future Developer</title>
 
-  <!-- 네비게이션 -->
-  <nav>
-    <div class="nav-container">
-      <div class="logo">Portfolio</div>
-        <div class="menu">
-          <a href="#home">HOME</a>
-          <a href="#about">ABOUT</a>
-          <a href="#skills">SKILLS</a>
-          <a href="#projects">INTERN</a>
+    <!-- SEO: 페이지 설명 -->
+    <meta
+      name="description"
+      content="기술과 비즈니스를 연결하며 실제 문제를 해결하는 사람. AI, Digital Transformation, Technology 분야에서 성장 중인 한신비의 개인 브랜딩 사이트입니다."
+    />
+    <meta
+      name="keywords"
+      content="한신비, HAN SINBI, AI, Digital Transformation, Consulting, Technology, Future Developer"
+    />
+    <meta name="author" content="한신비" />
 
-          <a href="./docs/portfolio.pdf" target="_blank">
-            RESUME
-          </a>
+    <!-- Open Graph: SNS 공유 미리보기 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:title" content="HAN SINBI | AI · Digital Transformation · Future Developer" />
+    <meta
+      property="og:description"
+      content="기술과 비즈니스를 연결하며 실제 문제를 해결하는 사람. AI와 비즈니스를 연결하는 전문가를 목표로 성장하고 있습니다."
+    />
+    <meta property="og:site_name" content="HAN SINBI" />
+    <meta property="og:image" content="./assets/images/og-image.svg" />
 
-          <a href="coverletter.pdf" target="_blank">
-            COVER LETTER
-          </a>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HAN SINBI | AI · Digital Transformation · Future Developer" />
+    <meta
+      name="twitter:description"
+      content="기술과 비즈니스를 연결하며 실제 문제를 해결하는 사람."
+    />
+    <meta name="twitter:image" content="./assets/images/og-image.svg" />
 
-          <a href="https://github.com/Jangbeomjo" target="_blank">
-            GITHUB
-          </a>
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+    <link rel="apple-touch-icon" href="./assets/icons/favicon.svg" />
 
-          <a href="#contact">CONTACT</a>
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- 스크린 리더용: 본문 바로가기 -->
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+    <!-- ===== 헤더 / 내비게이션 ===== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <!-- 로고: 클릭 시 Hero로 이동 -->
+        <a class="header__logo" href="#hero" aria-label="홈으로 이동">HAN SINBI</a>
+
+        <!-- 데스크톱 메뉴 -->
+        <nav class="nav" aria-label="주요 메뉴">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#journey">Journey</a></li>
+            <li><a class="nav__link" href="#experience">Experience</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#projects">Projects</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- 헤더 우측: 테마 토글 + 모바일 메뉴 버튼 -->
+        <div class="header__actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="다크 모드로 전환"
+            aria-pressed="false"
+          >
+            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
+            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
+          </button>
+
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-label="메뉴 열기"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </button>
         </div>
-    </div>
-  </nav>
+      </div>
 
-  <!-- 메인 화면 -->
-  <section id="home" class="hero">
+      <!-- 모바일 드롭다운 메뉴 -->
+      <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" hidden>
+        <ul class="mobile-menu__list">
+          <li><a class="mobile-menu__link" href="#about">About</a></li>
+          <li><a class="mobile-menu__link" href="#journey">Journey</a></li>
+          <li><a class="mobile-menu__link" href="#experience">Experience</a></li>
+          <li><a class="mobile-menu__link" href="#skills">Skills</a></li>
+          <li><a class="mobile-menu__link" href="#projects">Projects</a></li>
+          <li><a class="mobile-menu__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="hero-content">
+    <!-- ===== 메인 콘텐츠 ===== -->
+    <main id="main-content">
+      <!-- 1. Hero 섹션 -->
+      <section class="hero section" id="hero" aria-labelledby="hero-title">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <p class="hero__label fade-in">Personal Brand</p>
+          <h1 class="hero__title" id="hero-title">HAN SINBI</h1>
+          <p class="hero__subtitle fade-in fade-in--delay-1">
+            AI • Digital Transformation • Future Developer
+          </p>
+          <p class="hero__typing" id="typing-text" aria-live="polite">
+            <span class="hero__typing-cursor" aria-hidden="true">|</span>
+          </p>
+          <div class="hero__actions fade-in fade-in--delay-3">
+            <a class="btn btn--primary" href="#about">About</a>
+            <a class="btn btn--secondary" href="#contact">Contact</a>
+          </div>
+          <a class="hero__scroll" href="#about" aria-label="About 섹션으로 스크롤">
+            <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
 
-      <h1>
-        안녕하세요 👋<br>
-        <span>한신비</span>입니다
-      </h1>
+      <!-- 2. About 섹션 -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-header__label">About</p>
+            <h2 class="section-header__title" id="about-title">저는 어떤 사람인가</h2>
+          </header>
 
-      <p>
-        Backend Developer · Spring Boot · Oracle · AWS · OpenAI
-      </p>
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p>중국어문학과 공법학을 전공하며 언어와 제도에 대한 이해를 쌓았고,</p>
+              <p>딜로이트와 공공기관 AI 프로젝트 경험을 통해</p>
+              <p>기술이 실제 사회와 조직에 적용되는 과정을 경험했습니다.</p>
+              <p>현재는 개발 역량을 강화하며</p>
+              <p>AI와 비즈니스를 연결하는 전문가를 목표로 성장하고 있습니다.</p>
+            </div>
 
-      <p class="hero-desc">
-        그냥 아무것도 하기 싫어요.
-      </p>
+            <div class="about-cards">
+              <article class="info-card reveal">
+                <h3 class="info-card__title">Education</h3>
+                <ul class="info-card__list">
+                  <li>
+                    <strong>국민대학교</strong>
+                    <span>중국어문학 전공</span>
+                  </li>
+                  <li>
+                    <strong>국민대학교</strong>
+                    <span>공법학 부전공</span>
+                  </li>
+                </ul>
+              </article>
 
+              <article class="info-card reveal reveal--delay-1">
+                <h3 class="info-card__title">Positioning</h3>
+                <ul class="info-card__list info-card__list--bullet">
+                  <li>AI · Digital Transformation · Technology</li>
+                  <li>기술과 비즈니스를 연결하는 문제 해결자</li>
+                  <li>미래의 AI Product Builder / Developer</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </div>
+      <!-- 3. Journey 섹션 -->
+      <section class="section section--muted" id="journey" aria-labelledby="journey-title">
+        <div class="container container--narrow">
+          <header class="section-header section-header--center reveal">
+            <p class="section-header__label">Journey</p>
+            <h2 class="section-header__title" id="journey-title">성장의 여정</h2>
+            <p class="section-header__desc">
+              Humanities에서 Future AI Product Builder까지, 단계별로 쌓아온 경험과 방향성입니다.
+            </p>
+          </header>
 
-  </section>
+          <ol class="timeline">
+            <li class="timeline__item reveal">
+              <div class="timeline__node" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <p class="timeline__subtitle">언어와 제도</p>
+                <h3 class="timeline__title">Humanities</h3>
+                <p class="timeline__desc">
+                  국민대학교 중국어문학 전공, 공법학 부전공. 언어와 제도에 대한 깊은 이해를
+                  쌓았습니다.
+                </p>
+              </div>
+            </li>
 
+            <li class="timeline__item reveal">
+              <div class="timeline__node" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <p class="timeline__subtitle">전략과 분석</p>
+                <h3 class="timeline__title">Consulting</h3>
+                <p class="timeline__desc">
+                  Deloitte 인턴 경험을 통해 프로젝트 리서치, 데이터 분석, 전략 문서 작성 등
+                  컨설팅 역량을 키웠습니다.
+                </p>
+              </div>
+            </li>
 
-  <!-- 푸터 -->
-  <footer>
-    © 2026 한신비 Portfolio
-  </footer>
+            <li class="timeline__item reveal">
+              <div class="timeline__node" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <p class="timeline__subtitle">기술의 사회적 적용</p>
+                <h3 class="timeline__title">AI Project Experience</h3>
+                <p class="timeline__desc">
+                  공공기관 AI 서비스 구축 컨설팅 인턴으로 요구사항 분석, 서비스 기획, AI 활용
+                  방안 연구를 경험했습니다.
+                </p>
+              </div>
+            </li>
 
-</body>
+            <li class="timeline__item reveal">
+              <div class="timeline__node" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <p class="timeline__subtitle">기술 역량 강화</p>
+                <h3 class="timeline__title">Development</h3>
+                <p class="timeline__desc">
+                  Python, JavaScript, Git, SQL 등을 학습하며 개발 역량을 적극적으로 강화하고
+                  있습니다.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__node" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <p class="timeline__subtitle">미래를 향해</p>
+                <h3 class="timeline__title">Future AI Product Builder</h3>
+                <p class="timeline__desc">
+                  AI와 비즈니스를 연결하는 AI Product Builder / Developer로 성장하는 것을
+                  목표로 합니다.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 4. Experience 섹션 -->
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-header__label">Experience</p>
+            <h2 class="section-header__title" id="experience-title">경험</h2>
+            <p class="section-header__desc">
+              실제 현장에서 쌓은 컨설팅 및 AI 프로젝트 경험입니다.
+            </p>
+          </header>
+
+          <div class="card-grid card-grid--2">
+            <article class="card reveal">
+              <div class="card__badge">Internship</div>
+              <h3 class="card__title">Deloitte Intern</h3>
+              <p class="card__role">Deloitte</p>
+              <p class="card__desc">
+                글로벌 컨설팅 환경에서 디지털 전환 프로젝트를 지원하며 비즈니스와 기술의
+                연결점을 경험했습니다.
+              </p>
+              <ul class="card__list">
+                <li>프로젝트 리서치</li>
+                <li>데이터 분석 지원</li>
+                <li>전략 문서 작성</li>
+                <li>디지털 전환 프로젝트 지원</li>
+              </ul>
+            </article>
+
+            <article class="card reveal reveal--delay-1">
+              <div class="card__badge">Internship</div>
+              <h3 class="card__title">Public AI Consulting Intern</h3>
+              <p class="card__role">Public AI Consulting</p>
+              <p class="card__desc">
+                국내 공공기관 AI 서비스 구축 프로젝트에 참여하며 기술이 실제 사회와 조직에
+                적용되는 과정을 경험했습니다.
+              </p>
+              <ul class="card__list">
+                <li>공공기관 AI 서비스 구축 지원</li>
+                <li>요구사항 분석</li>
+                <li>서비스 기획 참여</li>
+                <li>AI 활용 방안 연구</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Skills 섹션 -->
+      <section class="section section--muted" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section-header section-header--center reveal">
+            <p class="section-header__label">Skills</p>
+            <h2 class="section-header__title" id="skills-title">역량</h2>
+            <p class="section-header__desc">
+              도메인 지식, 기술 스택, 언어 역량을 카테고리별로 정리했습니다.
+            </p>
+          </header>
+
+          <div class="card-grid card-grid--3">
+            <article class="skill-card reveal">
+              <h3 class="skill-card__title">Domain</h3>
+              <div class="skill-card__tags">
+                <span class="tag">AI Service Planning</span>
+                <span class="tag">Digital Transformation</span>
+                <span class="tag">Business Analysis</span>
+                <span class="tag">Consulting</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal reveal--delay-1">
+              <h3 class="skill-card__title">Technical</h3>
+              <div class="skill-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Git</span>
+                <span class="tag">SQL</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal reveal--delay-2">
+              <h3 class="skill-card__title">Languages</h3>
+              <div class="skill-card__tags">
+                <span class="tag">Korean</span>
+                <span class="tag">Chinese</span>
+                <span class="tag">English</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Projects 섹션 -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="section-header reveal">
+            <p class="section-header__label">Projects</p>
+            <h2 class="section-header__title" id="projects-title">프로젝트</h2>
+            <p class="section-header__desc">
+              학습과 경험을 바탕으로 진행 중이거나 완료한 프로젝트입니다.
+            </p>
+          </header>
+
+          <div class="card-grid card-grid--3">
+            <article class="card card--project reveal">
+              <div class="card__status card__status--progress">진행 중</div>
+              <h3 class="card__title">Portfolio Website</h3>
+              <p class="card__desc">
+                HTML, CSS, JavaScript로 구축한 개인 브랜딩 웹사이트. 스토리텔링 중심의
+                프리미엄 디자인을 적용했습니다.
+              </p>
+              <div class="card__tags">
+                <span class="tag tag--accent">HTML</span>
+                <span class="tag tag--accent">CSS</span>
+                <span class="tag tag--accent">JavaScript</span>
+              </div>
+            </article>
+
+            <article class="card card--project reveal reveal--delay-1">
+              <div class="card__status card__status--done">완료</div>
+              <h3 class="card__title">AI Service Research</h3>
+              <p class="card__desc">
+                공공기관 AI 서비스 구축 프로젝트에서 수행한 AI 활용 방안 연구 및 서비스 기획
+                관련 학습·정리 프로젝트입니다.
+              </p>
+              <div class="card__tags">
+                <span class="tag tag--accent">AI</span>
+                <span class="tag tag--accent">Research</span>
+                <span class="tag tag--accent">Planning</span>
+              </div>
+            </article>
+
+            <article class="card card--project reveal reveal--delay-2">
+              <div class="card__status card__status--progress">진행 중</div>
+              <h3 class="card__title">Development Learning Projects</h3>
+              <p class="card__desc">
+                Python, JavaScript 등을 활용한 개발 학습 프로젝트 모음. 꾸준한 실습을 통해
+                기술 역량을 쌓고 있습니다.
+              </p>
+              <div class="card__tags">
+                <span class="tag tag--accent">Python</span>
+                <span class="tag tag--accent">JavaScript</span>
+                <span class="tag tag--accent">Learning</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Contact 섹션 -->
+      <section class="section section--muted" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section-header section-header--center reveal">
+            <p class="section-header__label">Contact</p>
+            <h2 class="section-header__title" id="contact-title">연락하기</h2>
+            <p class="section-header__desc">
+              협업, 네트워킹, 또는 궁금한 점이 있으시면 편하게 연락해주세요.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <p class="contact-intro reveal">
+              AI, Digital Transformation, Technology 분야에 관심이 있거나 함께 성장할 동료를
+              찾고 계시다면 아래 채널로 연결해주세요.
+            </p>
+
+            <div class="contact-links">
+              <!-- 연락처: 실제 주소로 교체하세요 -->
+              <a
+                class="contact-link reveal"
+                href="mailto:hannahsbhan@gmail.com"
+                aria-label="이메일 보내기"
+              >
+                <span class="contact-link__icon" aria-hidden="true">✉</span>
+                <span class="contact-link__text">
+                  <strong>Email</strong>
+                  <span>hannahsbhan@gmail.com</span>
+                </span>
+              </a>
+              <a
+                class="contact-link reveal"
+                href="https://instagram.com/hannahsbhan"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="인스타그램 방문"
+              >
+                <span class="contact-link__icon" aria-hidden="true">📷</span>
+                <span class="contact-link__text">
+                  <strong>Instagram</strong>
+                  <span>@hannahsbhan</span>
+                </span>
+              </a>
+              <a
+                class="contact-link reveal reveal--delay-1"
+                href="https://github.com/your-username"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub 프로필 열기"
+              >
+                <span class="contact-link__icon" aria-hidden="true">{ }</span>
+                <span class="contact-link__text">
+                  <strong>GitHub</strong>
+                  <span>프로필 보기</span>
+                </span>
+              </a>
+
+              <a
+                class="contact-link reveal reveal--delay-2"
+                href="https://linkedin.com/in/your-profile"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn 프로필 열기"
+              >
+                <span class="contact-link__icon" aria-hidden="true">in</span>
+                <span class="contact-link__text">
+                  <strong>LinkedIn</strong>
+                  <span>프로필 보기</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== 푸터 ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">
+          &copy; <span id="current-year"></span> HAN SINBI. All rights reserved.
+        </p>
+        <p class="footer__note">Built with HTML · CSS · JavaScript</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
